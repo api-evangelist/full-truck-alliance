@@ -1,8 +1,25 @@
 aid: full-truck-alliance
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/full-truck-alliance.png
 name: Full Truck Alliance
-description: 'Full Truck Alliance is a company surfaced as a portfolio company of dcm-ventures, hongshan,
-  softbank-vision-fund and added to the API Evangelist network as a stub for enrichment. Sector: enterprise.
-  This profile is a lead awaiting the enrichment pipeline.'
+description: 'Full Truck Alliance Co. Ltd. (Manbang Group / 满帮集团, NYSE: YMM) operates a leading
+  digital freight platform in China that connects truckers and shippers to make road transportation more
+  efficient. It runs the Yunmanman (运满满) and Huochebang (货车帮) mobile apps, applying mobile internet,
+  big data, and artificial intelligence to freight matching, brokerage, transaction services, and value-added
+  offerings across hundreds of cities and tens of thousands of routes. It was surfaced as a portfolio company
+  of dcm-ventures, hongshan, and softbank-vision-fund and added to the API Evangelist network. As of this
+  enrichment pass the company publishes no public developer portal, API documentation, or open platform on
+  its corporate site; this profile carries verified company identity plus a probed domain-security posture.'
 url: https://raw.githubusercontent.com/api-evangelist/full-truck-alliance/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -14,10 +31,16 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
 tags:
 - Company
 - Enterprise
+- Logistics
+- Freight
+- Trucking
+- Transportation
+- Marketplace
+- China
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -25,5 +48,14 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/full-truck-alliance-domain-security.yml
 - type: Website
+  url: https://www.fulltruckalliance.com
+- type: InvestorRelations
   url: https://ir.fulltruckalliance.com/Company-Profile#
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
